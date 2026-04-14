@@ -713,3 +713,38 @@ th {
     text-align: left;
 }
 }
+
+/* Entrance animation for the logo row (replaces previous Velocity animation) */
+.stagger {
+	opacity: 0;
+	animation: tribe-stagger-in 1s ease-out both;
+	animation-delay: 0.1s;
+	transform-origin: center top;
+	will-change: transform, opacity;
+}
+@keyframes tribe-stagger-in {
+	from {
+		opacity: 0;
+		transform: perspective(800px) rotateX(-14deg) translateZ(100px) translateY(10px) scale(0.98);
+	}
+	to {
+		opacity: 1;
+		transform: perspective(800px) rotateX(0) translateZ(0) translateY(0) scale(1);
+	}
+}
+
+/* Subtle pill for startups that have had an exit */
+.badge-exit {
+	display: inline-block;
+	padding: 1px 7px;
+	margin-left: 5px;
+	font-size: 10px;
+	font-weight: 600;
+	letter-spacing: 0.6px;
+	text-transform: uppercase;
+	color: #0dd0dd;
+	border: 1px solid #0dd0dd;
+	border-radius: 3px;
+	vertical-align: 2px;
+	white-space: nowrap;
+}
