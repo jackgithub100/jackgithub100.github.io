@@ -13,7 +13,7 @@
 		<link rel="icon" type="image/jpeg" href="img/thetribe-rect.jpg">
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Metrophobic&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Metrophobic&display=swap" rel="stylesheet">
 	</head>
 	<body class="theme-cyan">
 
@@ -32,21 +32,23 @@
 			<div class="main-row">
 				<div class="col-12 col-6-tablet col-4-desktop content-col">
 					<div class="portfolioSection-quote">
-						<p>The Tribe invests in startups. Focusing on startups where "community" forms a core part of the business.<br /><br />
-						</p>
+						<p>The Tribe invests in community driven startups &mdash; where &ldquo;community&rdquo; forms a core part of the business.</p>
 					</div>
-					<h6 class="portfolioSection-investorLabel">Invest with us:</h6>
-					<ul class="portfolioSection-investorList theme-textColor">
-						<li><a href="https://angel.co/s/the-tribe/20twP" target="_blank" rel="noopener noreferrer"><b>Apply to invest with The Tribe</b></a></li>
-					</ul>
-					<div style="font-size: 12px;">Only accepting active investors;<br />please include a note with your application.</div>
+					<h6 class="portfolioSection-investorLabel">Invest with us</h6>
+					<a href="https://angel.co/s/the-tribe/20twP" target="_blank" rel="noopener noreferrer" class="button--themed invest-cta">Apply to invest with The Tribe</a>
+					<p class="invest-note">Only accepting active investors &mdash; please include a note with your application.</p>
 				</div>
 
 				<div class="col-12 col-6-tablet col-8-desktop table-col">
 					<div class="portfolioLogos">
 						<p class="-list-area">Portfolio</p>
+						<div class="portfolio-filter" role="tablist" aria-label="Filter portfolio">
+							<button type="button" class="portfolio-filter-btn is-active" data-filter="all" aria-pressed="true">All</button>
+							<button type="button" class="portfolio-filter-btn" data-filter="active" aria-pressed="false">Active</button>
+							<button type="button" class="portfolio-filter-btn" data-filter="exit" aria-pressed="false">Exited</button>
+						</div>
 						  
-					      <div class="card-6 card-6-tablet card-6-desktop ">
+					      <div class="card-6 card-6-tablet card-6-desktop" data-status="active">
 					          <div class="portfolioLogos-logo">
 					          <div class="portfolioLogos-note">
 <span>
@@ -56,7 +58,7 @@
 					        </div>
 					      </div>
 						  
-					      <div class="card-6 card-6-tablet card-6-desktop ">
+					      <div class="card-6 card-6-tablet card-6-desktop" data-status="exit">
 					          <div class="portfolioLogos-logo">
 					           <div class="portfolioLogos-note"><span>
 <a href="http://thehustle.co/" target="_blank" rel="noopener noreferrer">TheHustle</a> <span class="badge-exit">Exited</span>
@@ -65,7 +67,7 @@
 					        </div>
 					      </div>
 						  
-					      <div class="card-6 card-6-tablet card-6-desktop ">
+					      <div class="card-6 card-6-tablet card-6-desktop" data-status="exit">
 					          <div class="portfolioLogos-logo">
 					          <div class="portfolioLogos-note"><span>
 Golden.com <span class="badge-exit">Exited</span>
@@ -75,7 +77,7 @@ Golden.com <span class="badge-exit">Exited</span>
 					      </div>
 						  					  
 						  
-					      <div class="card-6 card-6-tablet card-6-desktop ">
+					      <div class="card-6 card-6-tablet card-6-desktop" data-status="exit">
 					          <div class="portfolioLogos-logo">
 					          <div class="portfolioLogos-note"><span>
 Coin <span class="badge-exit">Exited</span>
@@ -85,7 +87,7 @@ Coin <span class="badge-exit">Exited</span>
 					      </div>
 
 
-					      <div class="card-6 card-6-tablet card-6-desktop ">
+					      <div class="card-6 card-6-tablet card-6-desktop" data-status="exit">
 					          <div class="portfolioLogos-logo">
 					          <div class="portfolioLogos-note"><span>
 <a href="https://www.intricately.com/" target="_blank" rel="noopener noreferrer">Intricately</a> <span class="badge-exit">Exited</span>
@@ -95,7 +97,7 @@ Coin <span class="badge-exit">Exited</span>
 					      </div>
 
 
-					      <div class="card-6 card-6-tablet card-6-desktop ">
+					      <div class="card-6 card-6-tablet card-6-desktop" data-status="active">
 					          <div class="portfolioLogos-logo">
 					          <div class="portfolioLogos-note"><span>
 <a href="https://www.angellist.com/" target="_blank" rel="noopener noreferrer">AngelList</a>
@@ -105,7 +107,7 @@ Coin <span class="badge-exit">Exited</span>
 					      </div>
 
 
-					      <div class="card-6 card-6-tablet card-6-desktop ">
+					      <div class="card-6 card-6-tablet card-6-desktop" data-status="exit">
 					          <div class="portfolioLogos-logo">
 					          <div class="portfolioLogos-note"><span>
 <a href="https://www.withotis.com/" target="_blank" rel="noopener noreferrer">Otis</a> <span class="badge-exit">Exited</span>
@@ -115,7 +117,7 @@ Coin <span class="badge-exit">Exited</span>
 					      </div>
 
 
-					      <div class="card-6 card-6-tablet card-6-desktop ">
+					      <div class="card-6 card-6-tablet card-6-desktop" data-status="active">
 					          <div class="portfolioLogos-logo">
 					          <div class="portfolioLogos-note"><span>
 <a href="https://www.percent.com/" target="_blank" rel="noopener noreferrer">Percent</a>
@@ -125,7 +127,7 @@ Coin <span class="badge-exit">Exited</span>
 					      </div>
 
 
-					      <div class="card-6 card-6-tablet card-6-desktop ">
+					      <div class="card-6 card-6-tablet card-6-desktop" data-status="active">
 					          <div class="portfolioLogos-logo">
 					          <div class="portfolioLogos-note"><span>
 <a href="https://www.openphone.com" target="_blank" rel="noopener noreferrer">OpenPhone</a>
@@ -135,7 +137,7 @@ Coin <span class="badge-exit">Exited</span>
 					      </div>
 
 
-					      <div class="card-6 card-6-tablet card-6-desktop ">
+					      <div class="card-6 card-6-tablet card-6-desktop" data-status="active">
 					          <div class="portfolioLogos-logo">
 					          <div class="portfolioLogos-note"><span>
 <a href="https://www.rallyrd.com" target="_blank" rel="noopener noreferrer">Rally</a>
@@ -145,7 +147,7 @@ Coin <span class="badge-exit">Exited</span>
 					      </div>
 
 
-					      <div class="card-6 card-6-tablet card-6-desktop ">
+					      <div class="card-6 card-6-tablet card-6-desktop" data-status="active">
 					          <div class="portfolioLogos-logo">
 					          <div class="portfolioLogos-note"><span>
 <a href="https://www.levelshealth.com" target="_blank" rel="noopener noreferrer">Levels</a>
@@ -155,7 +157,7 @@ Coin <span class="badge-exit">Exited</span>
 					      </div>
 
 
-					      <div class="card-6 card-6-tablet card-6-desktop ">
+					      <div class="card-6 card-6-tablet card-6-desktop" data-status="active">
 					          <div class="portfolioLogos-logo">
 					          <div class="portfolioLogos-note"><span>
 <a href="https://www.overflow.co" target="_blank" rel="noopener noreferrer">Overflow</a>
