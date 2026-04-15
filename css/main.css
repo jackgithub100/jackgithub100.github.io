@@ -745,6 +745,11 @@ th {
 
 /* ---------- Typography refresh ---------- */
 
+/* Space above the "Invest with us:" heading */
+.portfolioSection-investorLabel {
+	margin-top: 20px !important;
+}
+
 /* Secondary font for portfolio cards */
 .portfolioLogos-note {
 	font-family: 'Inter', 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -762,4 +767,14 @@ th {
 }
 .portfolioLogos-note > span a {
 	font-weight: 600;
+}
+
+/* Acquisition attribution: muted so it reads as metadata, not description */
+.acquired-note {
+	color: #999;
+}
+
+/* Slight breathing room between portfolio rows */
+.portfolioLogos .card-6 {
+	margin-bottom: 8px;
 }
